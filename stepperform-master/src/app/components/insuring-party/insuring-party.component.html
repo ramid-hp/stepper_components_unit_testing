@@ -1,0 +1,54 @@
+<div class="col-12">
+    <h1 class="display-1 ">Insuring Party</h1>
+    <form [formGroup]="insuringParty">
+        <div class="form-row">
+            <div class="col-8">
+                EGN/EIK/LNCH<br>
+                <a href=""><u>Who's data should I fill in?</u></a>
+            </div>
+            <div class="col-4">
+                <input class="form-control" type="text" formControlName="egn" (change)="change()"
+                    placeholder="Enter your EGN/EIK/LNCH" value={{egn}}>
+                <div *ngIf="insuringParty.controls.egn.hasError('required') &&(insuringParty.controls.egn.dirty || insuringParty.controls.egn.touched)"
+                    class="error">This field is mandatory</div>
+                <div *ngIf="insuringParty.controls.egn.hasError('pattern') &&(insuringParty.controls.egn.dirty || insuringParty.controls.egn.touched)"
+                    class="error">Only 10 digit numerical value allowed</div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="form-row">
+            <div class="col-8">
+                Place of Permanent Residence?
+            </div>
+            <div class="col-4">
+                <select formControlName="address" class="form-control" (change)="change()">
+                    <option selected disabled value="">--SELECT--</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="mumbai">Mumbai</option>
+                </select>
+                <div class="error" *ngIf="formsControl.address.touched && formsControl.address.errors">
+                    <div *ngIf="formsControl.address.errors.required">This field is mandatory</div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="form-row">
+            <div class="col-8">
+                Email
+            </div>
+            <div class="col-4">
+                <input class="form-control" type="email" formControlName="email" (change)="change()"
+                    placeholder="Enter you email">
+                <div class="error" *ngIf="formsControl.email.touched && formsControl.email.errors">
+                    <div *ngIf="formsControl.email.errors.required">This field is mandatory</div>
+                    <div *ngIf="formsControl.email.errors.pattern">Please enter a valid email</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <button type="button" class="btn btn-primary badge-pill pl-4 pr-4 pt-2 pb-2" style="margin-right: 0;"
+            (click)="submit()" matStepperNext [disabled]="insuringParty.invalid">Next</button>
+    </form>
+</div>

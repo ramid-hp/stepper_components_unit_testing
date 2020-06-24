@@ -1,0 +1,117 @@
+.container{
+   
+    padding-top: 50px;
+    width: 2000px;
+   
+      
+}
+.heading{
+    text-align: left;
+    margin-left:20px ;
+    color: rgbrgb(8, 56, 95); 
+    font-family:   'Ubuntu', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+ 
+}
+
+.thirdparty{
+    background-color: rgb(8, 56, 95); 
+    height:130px;
+    width:2000px;
+}
+.policy {
+    color:white;
+    margin-left:-1px ;
+    margin-top: -50px;
+    font-size: 20px;
+   
+}
+.bgn  {
+
+margin-top: -1px;
+
+color:white;
+font-size: 20px;
+
+}
+
+/* 'Times New Roman',Lucida Grande , Arial, Tahomasans-serifTrebuchet MS' */
+
+.firstcard{
+   width:2000px;
+    height:90px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: -30px;
+    
+    }
+.card-body{
+    padding-top: 2px;
+}    
+.discription{
+        color:rgb(8, 56, 95);
+        padding-left: 15px;
+        margin-top: -5px;
+}
+.secondcard{
+       
+    width:2000px;
+    height:110px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: -30px;
+    
+        }
+
+.valuebutton{
+            width:80px;
+           height:20px;
+           padding-top: 1px;
+}
+.afterpremium{
+    padding-left: 15px;
+    margin-top: -5px;
+}
+.afterpremium span{
+
+    color:rgb(8, 56, 95);
+}
+.bgnpremium {
+    margin-right: -180px;
+    margin-top: -1px;
+    text-align: right;
+    color:rgb(8, 56, 95);
+    font-size: 20px;
+    
+}
+ .thirdcard{
+           
+            width:2000px;
+            height:550px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: -30px;
+ }
+ .textcolor{
+    
+    color:rgb(8, 56, 95);
+    margin-top: -20px;
+    padding-left: 15px;
+    
+}
+
+ .nextbutton{
+    border-radius: 24px;
+    height:30px;
+    width:120px;
+    margin-left: 25px;
+    margin-top: -30px;
+   
+ }
+ 
+ .overflowAuto {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+ .car{
+     margin-left:-5px;
+ }
